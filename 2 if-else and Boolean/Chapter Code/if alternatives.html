@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>If alternatives</title>
+</head>
+<body>
+  <script>
+    // Ternary operator
+    let age = 32;
+    let result;
+    if (age > 18) {
+      result = 'Adult';
+    } else {
+      result = 'Kid'
+    }
+    let result1 = age > 18 ? 'Adult' : 'Kid';
+    console.log(result1);
+
+    // Guard operator
+    let age1 = 0;
+    let finalAge1 = age1 || 18;
+    console.log(age1);
+    console.log(finalAge1);
+
+    // Default operator
+    let age2;
+    let finalAge2 = age2 ?? 18;
+    console.log(age2);
+    console.log(finalAge2);
+
+  </script>
+</body>
+</html>
